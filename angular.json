@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "E-Learning": {
@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/slick-carousel/slick/slick.scss",  
+             "node_modules/slick-carousel/slick/slick-theme.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/jquery/dist/jquery.min.js",  
+              "node_modules/slick-carousel/slick/slick.min.js"]
           },
           "configurations": {
             "production": {
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "E-Learning"
+    }
+  },
+  "defaultProject": "E-Learning",
+  "cli": {
+    "analytics": "cd3f4027-c615-4589-843d-b1253a556ed8"
+  }
 }

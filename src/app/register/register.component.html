@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Enrollment Form</title>
+</head>
+
+<body>
+    <form method="post" action="register.php">
+        <table align="center">
+            <tr>
+                <td>Enter Name:</td>
+                <td><input type="text" name="UserName"></td>
+            </tr>
+            <tr>
+                <td>Enter Email:</td>
+                <td><input type="email" name="Email"></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><input type="text" name="Location"></td>
+            </tr>
+            <tr>
+                <td>Course Enrolled:</td>
+                <td>
+                    <input type="checkbox" id="course1" name="course1" value="AWS"><label for="course1">AWS</label><br>
+                    <input type="checkbox" id="course2" name="course2" value="Python"><label for="course2">Python</label><br>
+                    <input type="checkbox" id="course3" name="course3" value="Java"><label for="course3">Java</label><br>
+                    <input type="checkbox" id="course4" name="course4" value="Digital Marketing"><label for="course4">Digital Marketing</label><br>
+                    <input type="checkbox" id="course5" name="course5" value="Web Development"><label for="course5">Web Development</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Mobile No:</td>
+                <td><input type="text" name="Mobile"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="DOB"></td>
+            </tr>
+            <tr>
+                <td><label for="expectation">Expectation from the Course:</label></td>
+                <td>
+                    
+                    <textarea id ="expectation" name="expectation" rows="5" cols="25"></textarea></td>
+            </tr>
+            <td>Internernship Needed:</td>
+                <td>
+                    <input type="radio" id="yes" name="intern" value="yes"><label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="intern" value="no"><label for="no">No</label><br>
+                    <input type="radio" id="maybe" name="intern" value="maybe"><label for="maybe">May Be</label><br>
+                </td>
+            <tr>
+                <td align="center" colspan="2"><input type="submit" value="Enroll" ></td>
+            </tr>
+           </table>
+    </form>
+
+    
+</body>
+
+</html>
